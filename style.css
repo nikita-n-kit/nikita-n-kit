@@ -69,6 +69,12 @@ body {
 	padding-top: 8px;	
 }
 
+.logo > a {
+	display: block;
+	height: 50px;
+	width: 180px;
+}
+
 .container-SBB > div {
 	
 	float: left;
@@ -81,7 +87,6 @@ body {
 .searchField {
 	display: block;
 	
-	width: 66.6%;
 	height: 40px;
 	width: 200px;
 	border: 1px solid #2c71b8;
@@ -91,6 +96,7 @@ body {
 	margin-left: 30px;
 	margin-top: 5px;
 	padding-left: 20px;
+	padding-right: 39px;
 }
 
 .imgSearch {
@@ -105,10 +111,11 @@ body {
 	margin-left: -34px;
 	margin-top: 11px;
 }
+
 .imgBasket {
 	display:block;
 	position: relative;
-	width: 25%;
+	
 	background-image: url(images/basket.png); 
 	background-repeat: no-repeat;
 	background-position: 10px 10px;
@@ -132,12 +139,7 @@ body {
 	font-size: 10px;
 	padding: 4px 5px;
 	margin: -9px;
-
-
 }
-
-
-
 
 
 
@@ -145,3 +147,28 @@ body {
   ::-moz-placeholder          {color:#2c71b8; opacity:1;}/* Firefox 19+ */
   :-moz-placeholder           {color:#2c71b8; opacity:1;}/* Firefox 18- */
   :-ms-input-placeholder      {color:#2c71b8; opacity:1;}/* IE */
+
+
+.pull-downmenu {
+	position: relative;
+}
+
+
+
+  
+i.check {
+  display: inline-block;
+  position: absolute;
+  margin-left: 121px;
+  margin-top: -27px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #2c71b8;
+  border-width: 0 2px 2px 0;
+  transform: rotate( 45deg);
+}
+
+i.check:hover {
+	background-color: #2c71b8;
+	color: white;
+}
