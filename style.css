@@ -9,6 +9,7 @@ h1 {
 
 body {
 	font-family: 'Roboto', sans-serif;
+
 	background-image: url(images/patt.png);
 }
 
@@ -27,6 +28,7 @@ body {
 
 .col-md-6 {
 	width: 50%;
+	font-weight: 350;
 }
 
 .row::after {
@@ -92,6 +94,7 @@ body {
 	border: 1px solid #2c71b8;
 	background-color: transparent;
 	font-size: 21px;
+	font-weight: lighter;
 	color: #2c71b8;
 	margin-left: 30px;
 	margin-top: 5px;
@@ -148,7 +151,7 @@ body {
   :-ms-input-placeholder      {color:#2c71b8; opacity:1;}/* IE */
 
 
-.p-d.menu {
+.pdmenu {
 	position: relative;
 	display: block;
 }
@@ -162,7 +165,7 @@ body {
 	color: white;
 	text-align: left;
 	font-size: 21px;
-	font-weight: 300;
+	font-weight: 350;
 	padding-left: 31px;
 
 
@@ -172,8 +175,11 @@ body {
 .drop-menu > a:hover {
 	background-color: white;
 	color: #2c71b8;
+	font-weight: 350;
 
 }
+
+
 
 .drop-menu {
 	display: block;
@@ -182,17 +188,24 @@ body {
 	width: 293px;
 	background-color: #2c71b8;
 	margin-left: -1px;
-	font-size: 21px;
+
 }
 
+
+
+
 .arrow1 {
-	display: inline-block;
+	display: block;
+	background-image: url(images/arrow1.png);
+	background-repeat: no-repeat;
+	background-size: 10px;
 	position: absolute;
-	transform: rotate(90deg);
 	margin-left: 120px;
-	margin-top: -34px;
-	font-size: 22px;
-	color: #2c71b8;
+	margin-top: -29px;
+	
+	width: 10px;
+	height: 10px;
+	
 }
 
 .drop-menu {
@@ -201,17 +214,18 @@ body {
   
 }
 
-ul.menu > li.pdmenu:hover > ul.drop-menu {
+
+li.pdmenu:hover > div.drop-menu {
 	visibility: visible;
 	display: block;
 }
 
-ul.menu > li.pdmenu:hover > div.arrow1 {
-	color: white;
 
-}
 
-ul.drop-menu:hover + li.pdmenu {
-	background-color: #2c71b8;
-	color: white;
+
+
+
+li.pdmenu:hover > div.arrow1 {
+	filter: hue-rotate(150deg) brightness(100);
+
 }
