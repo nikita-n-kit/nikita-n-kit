@@ -28,7 +28,7 @@ body {
 
 .col-md-6 {
 	width: 50%;
-	font-weight: 350;
+	
 }
 
 .row::after {
@@ -60,6 +60,7 @@ body {
 	text-decoration: none;
 	font-size: 21px;
 	color: #2c71b8;
+	font-weight: 350;
 }
 
 .navMenu > li:hover > a {
@@ -77,8 +78,7 @@ body {
 	width: 180px;
 }
 
-.container-SBB > div {
-	
+.containerSBB > div {	
 	float: left;
 }
 
@@ -202,4 +202,27 @@ body {
 .navMenu > li:hover > a.arrow1:after {
 	filter: hue-rotate(150deg) brightness(100);
 
+}
+
+.col-md-9 {
+	width: 75%;
+}
+.slider {
+	width: auto;
+	height: 400px;
+	background-color: rgba(0,0,0,0.1);
+	border-bottom: 1px solid white;	
+}
+
+.containerMain {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.sideForm {
+	width: auto;
+	height: 500px;
+	background-color: rgba(255,255,255,0.2);
+	margin-right: 25px;
+	border-right: 1px solid white;
 }
