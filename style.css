@@ -266,13 +266,13 @@ body {
 
 .choice {
 	position: relative;
-	margin-left: 158px;
+	margin-left: 151px;
 }
 
 .sortBy {
 	position: static;
 	display: inline-block;
-	width: 265px;
+	width: 270px;
 	
 	border: 1px solid white;
 }
@@ -297,7 +297,7 @@ body {
 	display: block;
 	background-color:  #2c71b8;
 	height: 41px;
-	width: 263px;
+	width: 268px;
 	padding-left: 20px;
 	font-size: 22px;
 	line-height: 40px;
