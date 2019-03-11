@@ -243,8 +243,9 @@ body {
 
 
 .mainPage {
-	position: static;
-	background-color: rgba(255,255,255,0.1)
+	position: relative;
+	background-color: rgba(255,255,255,0.1);
+	z-index: 5;
 
 }
 
@@ -325,44 +326,181 @@ body {
 	
 }
 
-.deviceImg {
+.deviceSetings {
 	display: block;
 	width: 910px;
+
 	padding-top: 40px;
 	margin-left: -10px;
+	z-index: 1;
 
 }
 
-.deviceImg > div {
+.deviceSetings > div {
 	width: 270px;
-	height: 480px;
+
 	background-color: rgba(44, 113, 184, 0.5);
 	border: 1px solid white;
 	margin: 15px 15px;
 
 }
 
-.deviceImg > div > div {
-	position: absolute;
-	background-color: rgba(255,255,255,0.6);
-	height: 180px;
-	width: 268px;
-}
-
-.deviceImg > div > div > a {
-	display: inline-block;
-	position: absolute;
-	height: 179px;
-	width: 267px
-}
-
-.deviceImg > div > div > a > img {
+.deviceSetings > div > div {
 	position: relative;
+	background-color: rgba(255,255,255,0.7);
+	height: 170px;
+	width: 268px;
+	border-bottom: 1px solid white;
+	text-align: justify;
+    text-align-last: justify;	
+}
+
+.deviceSetings > div > div:after {
+	content:"";
+  	clear: both;
+  	width: 20px;
+  	height: 20px;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
+	position: relative;
+	background-image: url(images/dash.png);
+	background-repeat: no-repeat;
+	
+}
+
+
+
+.deviceSetings > div > div > img {
+
+	display: inline-block;
+	vertical-align: middle;
+	top: 25%;
+	left: 35%;
+
+    position: absolute;
+
 
 
  }
 	
+.diagonalLine1 {
+
+  background-image: linear-gradient(236.5deg, transparent 50%, white, transparent 51%);
+  background-repeat: no-repeat;
+
+}
+
+.diagonalLine2 {
+
+  background-image: linear-gradient(326.5deg, transparent 50%, white, transparent 51%);
+  background-repeat: no-repeat;
+
+}
+
+.deviceConfig {
+	display: inline-block;
+	position: static;
+	background-color: transparent;
+	margin-left: 13px;
+	margin-top: 13px;
+
+
+}
+
+.deviceConfig h2 {
+	display: inline-block;
+	color: white;
+	font-size: 29px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.deviceConfig p {
+	font-size: 21px;
+	color: rgba(255,255,255,0.8);
+	font-weight: 300;
+	padding-top: 10px;
+	line-height: 25px;
+	
+}
+
+.deviceConfig span {
+	display: inline-block;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+.deviceConfig h1 {
+	text-align: center;
+	margin-left: -13px;
+	font-size: 40px;
+	color: white;
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	margin: 15px 0;
+}
+
+.deviceConfig h1 sup {
+	vertical-align: super;
+	font-size: 22px;
+	color: white;
+}
+
+.loadMore {
+	position: relative;
+	
+	left: 36%;
+}
+
+.loadMore a {
+	font-size: 40px;
+	text-decoration: none;
+	color: white; 
+	text-align: center;
+	font-weight: 200;
+	display: inline-block;
+	margin-top: 20px;
+	width: 250px;
+	height: 40px;
+
+}
+
+.butMoreDet1 {
+	border: 1px solid white;
+	height: 50px;
+	width: 220px;
+	margin: 6px 9%;
+	background-color: transparent;
+	color: white;
+	font-weight: 500;
+	font-size: 19px;
+	font-stretch: condensed;
+}
+
+.butMoreDet2 {
+	border: 1px solid white;
+	height: 50px;
+	width: 220px;
+	margin: 6px 9%;
+	margin-bottom: 23px;
+	background-color: rgba(255,255,255,0.22);
+	color: white;
+	font-weight: 500;
+	font-size: 19px;
+}
+
+.butMoreDet2::after {
+	content:"";
+  	clear: both;
+  	width: 20px;
+  	height: 20px;
+	display:block;
+	position: absolute;	
+	background-image: url(images/basket2.png); 
+	background-repeat: no-repeat;
+	margin-left: 170px;
+	margin-top: -20px;
+
+
+}
