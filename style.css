@@ -416,67 +416,72 @@ input:checked + label:before {
 	position: relative;
 	width: 270px;
 	background-color: rgba(44, 113, 184, 0.5);
-	border: 1px solid white;
+	border: 1.7px solid  rgba(255,255,255,0.6);
 	margin: 15px 15px;
 
 }
 
-.deviceSetings > div > div {
+.devicePhoto {
+	display: block;
 	position: relative;
 	background-color: rgba(255,255,255,0.7);
 	height: 180px;
-	width: 268px;
-	border-bottom: 1px solid white;
+	width: 267px;
+	line-height: 180px;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 2;
+
+}
+
+.devicePhoto > img {
+	
+	position: static;
+	line-height: 180px;
+	vertical-align: middle;
+    z-index: 3;
+ }
+
+.devicePhotoStyle {
+	position: absolute;
+
+}
+
+.devicePhotoStyleBut {
+	position: absolute;
+	z-index: 5;
 	
 }
 
-.deviceSetings > div > div > .diagonalLine1::before {
-	content:"";
-  	clear: both;
+.buttonDash {
+	position: absolute;
   	width: 28px;
   	height: 28px;
   	margin-left: 230px;
   	margin-top: 10px;
-
-  	text-align: center;
-	display: block;
-	position: absolute;
 	background-image: url(images/dash.png);
+	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 1px solid  rgba(44, 113, 184, 0.5);
-	
+
 }
 
-/*.deviceSetings > div > div > .diagonalLine1::hover::after {
-	content: "";
-	clear: both;
+.buttonDash:hover {
+	background-color: #2c71b8;
 	background-image: url(images/dash2.png);
-	width: 28px;
-  	height: 28px;
-  	margin-left: 230px;
-  	margin-top: 10px;
-  	text-align: center;
-	display: block;
+
+} 
+
+
+
+.buttonHeart {
 	position: absolute;
-	background-repeat: no-repeat;
-	background-position: center;
-	border: 1px solid  rgba(44, 113, 184, 0.5);
-
-	
-}*/
-
-
-.deviceSetings > div > div > .diagonalLine1::after {
-	content:"";
-  	clear: both;
   	width: 28px;
   	height: 28px;
   	margin-left: 230px;
-  	margin-top: 50px;
-  	text-align: center;
-	display: block;
-	position: absolute;
+  	margin-top: 47px;
+  	background-color: transparent;
 	background-image: url(images/heart.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -484,18 +489,12 @@ input:checked + label:before {
 	
 }
 
+.buttonHeart:hover {
+	background-image: url(images/heart2.png);
+	background-color: #2c71b8;
+} 
 
 
-
-.deviceSetings > div > div > img {
-	
-	position: relative;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20%;
-    z-index: 3;
- }
 	
 .diagonalLine1 {
 	
@@ -560,10 +559,10 @@ input:checked + label:before {
 	color: white;
 	letter-spacing: 1.5px;
 	font-weight: 600;
-	margin: 20px 0;
+	margin: 23px 0;
 }
 
-.deviceConfig h1 sup {
+.deviceConfig h2 sup {
 	vertical-align: super;
 	font-size: 24px;
 	color: white;
@@ -590,26 +589,28 @@ input:checked + label:before {
 
 .butMoreDet1 {
 	border: 1px solid white;
-	height: 51px;
+	height: 50px;
 	width: 220px;
 	margin: 7px 9%;
 	background-color: rgb(44, 113, 184);
 	color: white;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 19px;
 	font-stretch: condensed;
+	margin-top: -1px;
 }
 
 .butMoreDet2 {
 	border: 1px solid white;
-	height: 51px;
+	height: 50px;
 	width: 220px;
 	margin: 7px 9%;
-	margin-bottom: 25px;
+	margin-bottom: 31px;
 	background-color: rgba(255,255,255,0.22);
 	color: white;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 19px;
+
 }
 
 .butMoreDet2::after {
